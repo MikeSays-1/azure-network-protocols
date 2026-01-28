@@ -32,6 +32,16 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>Actions and Observations</h2>
 
+1. on "vm-client-1" machine, download and install wireshark, select all default settings when prompted. Open Wireshark and select the active network interface (Ethernet). In the "Apply a display filter" field, type "icmp" and press Enter. Open PowerShell and Ping the private IP Address of "vm-dc-1". Observe the traffic in Wireshark.
+
+<img width="1395" height="451" alt="image" src="https://github.com/user-attachments/assets/dd9f44b1-f6ce-4984-b08c-63d6b74291bc" />
+
+
+
+
+
+
+
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
