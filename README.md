@@ -59,6 +59,7 @@ Observe the traffic in Wireshark. We filtered by ICMP to isolate and observe the
 <details><summary>See screenshots</summary>
 
 <img src="images/Step 2a.PNG" width="60%">
+
 </details> <br />
 
 <p>Inspect the data packet in Wireshark, under Internet Control Message Protocal drop down, and Data drop down, select the Data.</p>
@@ -67,7 +68,7 @@ Observe the traffic in Wireshark. We filtered by ICMP to isolate and observe the
 
 <details><summary>See screenshots</summary>
 
-<img src="images/Step 2b.PNG" width="60%">
+<img src="images/Step 2b.png" width="60%">
 </details> <br />
 
 >**Note:** On the right, you can see the ICMP payload, which often contains a predictable ASCII test pattern (such as the alphabet) used by the ping utility for easy identification during packet inspection.</P>
@@ -88,7 +89,7 @@ Select "+ Add" near the top, to add our new rule. Create and add the rule with t
 
 <details><summary>See screenshots</summary>
 
-<img src="images/Step 3a.JPG" width="30%">
+<img src="images/Step 3a.jpg" width="30%">
 </details> <br />
 
 
@@ -103,7 +104,7 @@ Select "+ Add" near the top, to add our new rule. Create and add the rule with t
 
 <details><summary>See screenshots</summary>
 
-<img src="images/Step 3c.PNG" width="60%">
+<img src="images/Step 3c.png" width="60%">
 </details> <br />
 
 <p>Back to normal. In PowerShell, press ```Ctrl+C``` to stop the continous ping.</P>
@@ -120,7 +121,7 @@ Observe the traffic within Wireshark.</p>
 
 <details><summary>See screenshots</summary>
 
-<img src="images/Step 4a.PNG" width="60%">
+<img src="images/Step 4a.png" width="60%">
 </details> <br />
 
 <p>In PowerShell, enter Commands such as id, hostname, uname, and pwd, and observe Wireshark again.</p>
@@ -137,7 +138,7 @@ Observe the traffic within Wireshark.</p>
 
 <details><summary>See screenshots</summary>
 
-<img src="images/Step 5.PNG" width="60%">
+<img src="images/Step 5.png" width="60%">
 </details> <br />
 
 <b>6. DNS TRAFFIC OBSERVATION</b>
@@ -148,7 +149,7 @@ nslookup google.com
 
 <details><summary>See screenshots</summary>
 
-<img src="images/Step 6.PNG" width="60%">
+<img src="images/Step 6.png" width="60%">
 </details> <br />
 
 <b>7. RDP TRAFFIC OBSERVATION</b>
@@ -156,7 +157,7 @@ nslookup google.com
 
 <details><summary>See screenshots</summary>
 
-<img src="images/Step 7.PNG" width="60%">
+<img src="images/Step 7.png" width="60%">
 </details> <br />
 
 
