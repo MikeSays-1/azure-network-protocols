@@ -60,7 +60,7 @@ Observe the traffic in Wireshark. We filtered by ICMP to isolate and observe the
 
 <img src="images/Step 2a.png" width="60%">
 
-</details> <br />
+</details> 
 
 <p>Inspect the data packet in Wireshark, under Internet Control Message Protocal drop down, and Data drop down, select the Data.</p>
 
@@ -69,7 +69,7 @@ Observe the traffic in Wireshark. We filtered by ICMP to isolate and observe the
 <details><summary>See screenshots</summary>
 
 <img src="images/Step 2b.png" width="60%">
-</details> <br />
+</details>
 
 >**Note:** On the right, you can see the ICMP payload, which often contains a predictable ASCII test pattern (such as the alphabet) used by the ping utility for easy identification during packet inspection.</P>
 
@@ -90,7 +90,7 @@ Select "+ Add" near the top, to add our new rule. Create and add the rule with t
 <details><summary>See screenshots</summary>
 
 <img src="images/Step 3a.jpg" width="30%">
-</details> <br />
+</details>
 
 
 <p>Observe the terminal and Wireshark output. Notice the "No Response Found!" in Wireshark, and "Request timed out." message in PowerShell.</p>
@@ -98,19 +98,19 @@ Select "+ Add" near the top, to add our new rule. Create and add the rule with t
 <details><summary>See screenshots</summary>
 
 <img src="images/Step 3b.png" width="60%">
-</details> <br />
+</details>
 
 <p>Re-enable ICMP Traffic by deleting the created rule in Azure, and insepect our network traffic in the terminal and Wireshark.</p>
 
 <details><summary>See screenshots</summary>
 
 <img src="images/Step 3c.png" width="60%">
-</details> <br />
+</details>
 
 <p>Back to normal. In PowerShell, press ```Ctrl+C``` to stop the continous ping.</P>
 
 <b>4. SSH TRAFFIC OBSERVATION</b>
-  
+
 Back in our client VM "vm-client-1" in Wireshark, clear the filter and filter for SSH traffic, type "SSH" in the "Apply a display filter" field. Now lets create a SSH Session between the Client VM and Domain Controller VM. In PowerShell, type the following,
 ```powershell
 ssh <linux username>@<linux private IP>
@@ -123,7 +123,7 @@ Observe the traffic within Wireshark.
 <details><summary>See screenshots</summary>
 
 <img src="images/Step 4a.png" width="60%">
-</details> <br />
+</details> 
 
 <p>In PowerShell, enter Commands such as id, hostname, uname, and pwd, and observe Wireshark again.</p>
 
@@ -140,19 +140,19 @@ Observe the traffic within Wireshark.
 <details><summary>See screenshots</summary>
 
 <img src="images/Step 5.png" width="60%">
-</details> <br />
+</details> 
 
 <b>6. DNS TRAFFIC OBSERVATION</b>
 
-  Back in Wireshark, filter for DNS traffic (DNS or udp.port == 53 || tcp.port == 53). In PowerShell use nslookup for www.google.com.
-```powershell
+Back in Wireshark, filter for DNS traffic (DNS or udp.port == 53 || tcp.port == 53). In PowerShell use nslookup for www.google.com.
+`powershell
 nslookup google.com
-```
+`
 
 <details><summary>See screenshots</summary>
 
 <img src="images/Step 6.png" width="60%">
-</details> <br />
+</details>
 
 <b>7. RDP TRAFFIC OBSERVATION</b>
 <p>Back in Wireshark, filter for RDP traffic (tcp.port == 3389).  Review the data stream from our Remote Desktop Connection from the local machine to the virtual machine!</p>
@@ -160,6 +160,6 @@ nslookup google.com
 <details><summary>See screenshots</summary>
 
 <img src="images/Step 7.png" width="60%">
-</details> <br />
+</details> 
 
 
