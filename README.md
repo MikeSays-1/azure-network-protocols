@@ -39,14 +39,10 @@ In this lab, we used Wireshark to observe network traffic between Azure virtual 
 - Step 2. ICMP Traffic Inspection
 - Step 3. NSG Rule Observation
 - Step 4. SSH, DHCP, DNS & RDP Traffic Observation
-> [!NOTE]
-> **Note:** Each step includes written instructions followed by a corresponding screenshot.<br>Expand the **See screenshots** section to view the images.
-
-> [!TIP]
-> sdads
-
 > [!IMPORTANT]
-> Pay attention to this.
+> Each step includes written instructions followed by a corresponding screenshot.<br>Expand the **See screenshots** section to view the images.
+
+
 
 <h2>Actions and Observations</h2>
 
