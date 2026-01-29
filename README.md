@@ -50,6 +50,7 @@ In this lab, we used Wireshark to observe network traffic between Azure virtual 
  - Create Linux VM, name it vm-linux, "Ubuntu Server 24.04 LTS - x64 Gen 2" for image, for size, select any with 2 VCPUs and 16gb Ram, select Password for Authication type, create your VM Linux credentials, continue to Networking> settings, select our earler VNet named "vnet-ad-lab", select Default subnet. Finally, select "Review + Create" and "Create". 
 
 <b>2. TRAFFIC INSPECTION AND SET UP</b>
+
 RDP into our "vm-client-1" machine, download and install wireshark, keep only default settings as prompted in installation. Open Wireshark and select the active network interface (Ethernet). In the "Apply a display filter" field, type "icmp" and press Enter. Open PowerShell and Ping the private IP Address of "vm-linux". 
 ```powershell
 ping <Linux Private IP>
@@ -75,6 +76,7 @@ Observe the traffic in Wireshark. We filtered by ICMP to isolate and observe the
 
 
 <b>3. NETWORK SECURITY GROUP RULE AND TRAFFIC OBSERVATION</b>
+
 In PowerShell on "vm-client-1" create a perpetual ping.
 `powershell
 ping <Linux Private IP> -t
@@ -145,9 +147,9 @@ Observe the traffic within Wireshark.
 <b>6. DNS TRAFFIC OBSERVATION</b>
 
 Back in Wireshark, filter for DNS traffic (DNS or udp.port == 53 || tcp.port == 53). In PowerShell use nslookup for www.google.com.
-`powershell
+```powershell
 nslookup google.com
-`
+```
 
 <details><summary>See screenshots</summary>
 
