@@ -128,7 +128,7 @@ Observe the traffic within Wireshark.</p>
 
 <details><summary>See screenshots</summary>
 
-<img src="images/Step 4b.PNG" width="60%">
+<img src="images/Step 4b.png" width="60%">
 </details> 
 
 <p>Exit SSH by typing "Exit" in PowerShell.</p>
@@ -142,10 +142,10 @@ Observe the traffic within Wireshark.</p>
 </details> <br />
 
 <b>6. DNS TRAFFIC OBSERVATION</b>
-<p>Back in Wireshark, filter for DNS traffic (DNS or udp.port == 53 || tcp.port == 53). In PowerShell use nslookup for www.google.com.
+Back in Wireshark, filter for DNS traffic (DNS or udp.port == 53 || tcp.port == 53). In PowerShell use nslookup for www.google.com.
 ```powershell
 nslookup google.com
-```</p>
+```
 
 <details><summary>See screenshots</summary>
 
