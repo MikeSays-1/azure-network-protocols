@@ -78,9 +78,9 @@ Observe the traffic in Wireshark. We filtered by ICMP to isolate and observe the
 <b>3. NETWORK SECURITY GROUP RULE AND TRAFFIC OBSERVATION</b>
 
 In PowerShell on "vm-client-1" create a perpetual ping.
-```powershell
+`
 ping <Linux Private IP> -t
-```
+`
 Go back to our Azure portal and view the list of VMs. Select "vm-linux", on the left pane, select "Network Settings", under Network security group, select "vm-linux-nsg". In the left pane, under Settings, select "Inbound security rules".
 Select "+ Add" near the top, to add our new rule. Create and add the rule with the following settings.
 - Destination port ranges: *
@@ -109,7 +109,7 @@ Select "+ Add" near the top, to add our new rule. Create and add the rule with t
 <img src="images/Step 3c.png" width="60%">
 </details>
 
-<p>Back to normal. In PowerShell, press `Ctrl+C` to stop the continous ping.</P>
+<p>Back to normal. In PowerShell, press `ctrl+c` to stop the continous ping.</P>
 
 <b>4. SSH TRAFFIC OBSERVATION</b>
 
