@@ -109,9 +109,9 @@ Select "+ Add" near the top, to add our new rule. Create and add the rule with t
 <img src="images/Step 3c.png" width="60%">
 </details>
 
-<p>Back to normal. In PowerShell, press 
+Back to normal. In PowerShell, press 
  `ctrl+c` 
- to stop the continous ping.</P>
+ to stop the continous ping.
 
 <b>4. SSH TRAFFIC OBSERVATION</b>
 
