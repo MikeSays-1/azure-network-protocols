@@ -1,6 +1,6 @@
 <p align="center">
 
-<img src="images/microsoft-azure-logo.png" width="400" />
+<img src="./images/microsoft-azure-logo.png" width="400" />
 </p>
 
 <h1>Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines</h1>
