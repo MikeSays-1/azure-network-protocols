@@ -39,6 +39,7 @@ In this lab, we used Wireshark to observe network traffic between Azure virtual 
 - Step 2. ICMP Traffic Inspection
 - Step 3. NSG Rule Observation
 - Step 4. SSH, DHCP, DNS & RDP Traffic Observation
+
 > [!IMPORTANT]
 > Each step includes written instructions followed by a corresponding screenshot.<br>Expand the **See screenshots** section to view the images.
 
@@ -74,7 +75,8 @@ Observe the traffic in Wireshark. We filtered by ICMP to isolate and observe the
 <img src="images/Step 2b.png" width="60%">
 </details>
 
->**Note:** On the right, you can see the ICMP payload, which often contains a predictable ASCII test pattern (such as the alphabet) used by the ping utility for easy identification during packet inspection.</P>
+> [!NOTE]
+> On the right, you can see the ICMP payload, which often contains a predictable ASCII test pattern (such as the alphabet) used by the ping utility for easy identification during packet inspection.
 
 
 <b>3. NETWORK SECURITY GROUP RULE AND TRAFFIC OBSERVATION</b>
