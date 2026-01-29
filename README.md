@@ -76,9 +76,9 @@ Observe the traffic in Wireshark. We filtered by ICMP to isolate and observe the
 
 <b>3. NETWORK SECURITY GROUP RULE AND TRAFFIC OBSERVATION</b>
 In PowerShell on "vm-client-1" create a perpetual ping.
-```powershell
+`powershell
 ping <Linux Private IP> -t
-```
+`
 Go back to our Azure portal and view the list of VMs. Select "vm-linux", on the left pane, select "Network Settings", under Network security group, select "vm-linux-nsg". In the left pane, under Settings, select "Inbound security rules".
 Select "+ Add" near the top, to add our new rule. Create and add the rule with the following settings.
 - Destination port ranges: *
@@ -110,14 +110,15 @@ Select "+ Add" near the top, to add our new rule. Create and add the rule with t
 <p>Back to normal. In PowerShell, press ```Ctrl+C``` to stop the continous ping.</P>
 
 <b>4. SSH TRAFFIC OBSERVATION</b>
-<p>Back in our client VM "vm-client-1" in Wireshark, clear the filter and filter for SSH traffic, type "SSH" in the "Apply a display filter" field. Now lets create a SSH Session between the Client VM and Domain Controller VM. In PowerShell, type the following,
+  
+Back in our client VM "vm-client-1" in Wireshark, clear the filter and filter for SSH traffic, type "SSH" in the "Apply a display filter" field. Now lets create a SSH Session between the Client VM and Domain Controller VM. In PowerShell, type the following,
 ```powershell
 ssh <linux username>@<linux private IP>
 ```
 In the following prompt, type yes and press Enter.
 Next, enter your Linux user password. Note: No characters will appear on the screen while you type, this is normal behavior for security reasons. Press Enter when finished.
 
-Observe the traffic within Wireshark.</p>
+Observe the traffic within Wireshark.
 
 <details><summary>See screenshots</summary>
 
@@ -142,7 +143,8 @@ Observe the traffic within Wireshark.</p>
 </details> <br />
 
 <b>6. DNS TRAFFIC OBSERVATION</b>
-Back in Wireshark, filter for DNS traffic (DNS or udp.port == 53 || tcp.port == 53). In PowerShell use nslookup for www.google.com.
+
+  Back in Wireshark, filter for DNS traffic (DNS or udp.port == 53 || tcp.port == 53). In PowerShell use nslookup for www.google.com.
 ```powershell
 nslookup google.com
 ```
