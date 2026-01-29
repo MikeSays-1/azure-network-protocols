@@ -42,6 +42,12 @@ In this lab, we used Wireshark to observe network traffic between Azure virtual 
 > [!NOTE]
 > **Note:** Each step includes written instructions followed by a corresponding screenshot.<br>Expand the **See screenshots** section to view the images.
 
+> [!TIP]
+> sdads
+
+> [!IMPORTANT]
+> Pay attention to this.
+
 <h2>Actions and Observations</h2>
 
 <b>1. AZURE SETUP</b>
