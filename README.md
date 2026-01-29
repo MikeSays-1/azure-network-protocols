@@ -15,8 +15,8 @@ In this lab, we used Wireshark to observe network traffic between Azure virtual 
 
 <h2>Environments and Technologies Used</h2>
 
-<img src="https://skillicons.dev/icons?i=azure,windows,powershell" />
-<img src="https://img.icons8.com/?size=50&id=rOHcpTUtCTjr&format=png&color=000000" />
+<p align="left">
+<img src="https://skillicons.dev/icons?i=azure,windows,powershell" /> <img src="https://img.icons8.com/?size=50&id=rOHcpTUtCTjr&format=png&color=000000" /></p>
 
 
 
@@ -58,7 +58,7 @@ Observe the traffic in Wireshark. We filtered by ICMP to isolate and observe the
 
 <details><summary>See screenshots</summary>
 
-<img src="images/Step 2a.PNG" width="60%">
+<img src="images/Step 2a.png" width="60%">
 
 </details> <br />
 
