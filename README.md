@@ -49,12 +49,12 @@ In this lab, we used Wireshark to observe network traffic between Azure virtual 
 
 <h2>Actions and Observations</h2>
 
-<b>1. AZURE SETUP</b>
+<h3>1. AZURE SETUP</h3>
  - Create a Resource Group, name it "rg-ad-lab".
  - Create VM, name it vm-client-1, "Windows 10 Enterprise, version 22H2 - x64 Gen 2" for image, for size, select any with 2 VCPUs and 16gb Ram, create your VM Client 1 credentials, mark checkbox for Licensing, continue to Networking> settings, create new vnet and name it "vnet-ad-lab", select Default subnet. Finally, select "Review + Create" and "Create".
  - Create Linux VM, name it vm-linux, "Ubuntu Server 24.04 LTS - x64 Gen 2" for image, for size, select any with 2 VCPUs and 16gb Ram, select Password for Authication type, create your VM Linux credentials, continue to Networking> settings, select our earler VNet named "vnet-ad-lab", select Default subnet. Finally, select "Review + Create" and "Create". 
 
-<b>2. TRAFFIC INSPECTION AND SET UP</b>
+<h3>2. TRAFFIC INSPECTION AND SET UP</h3>
 
 RDP into our "vm-client-1" machine, download and install wireshark, keep only default settings as prompted in installation. Open Wireshark and select the active network interface (Ethernet). In the "Apply a display filter" field, type "icmp" and press Enter. Open PowerShell and Ping the private IP Address of "vm-linux". 
 ```powershell
@@ -81,7 +81,7 @@ Observe the traffic in Wireshark. We filtered by ICMP to isolate and observe the
 > On the right, you can see the ICMP payload, which often contains a predictable ASCII test pattern (such as the alphabet) used by the ping utility for easy identification during packet inspection.
 
 
-<b>3. NETWORK SECURITY GROUP RULE AND TRAFFIC OBSERVATION</b>
+<h3>3. NETWORK SECURITY GROUP RULE AND TRAFFIC OBSERVATION</h3>
 
 In PowerShell on "vm-client-1" create a perpetual ping.
 `
@@ -119,7 +119,7 @@ Back to normal. In PowerShell, press
  `ctrl+c` 
  to stop the continous ping.
 
-<b>4. SSH TRAFFIC OBSERVATION</b>
+<h3>4. SSH TRAFFIC OBSERVATION</h3>
 
 Back in our client VM "vm-client-1" in Wireshark, clear the filter and filter for SSH traffic, type "SSH" in the "Apply a display filter" field. Now lets create a SSH Session between the Client VM and Domain Controller VM. In PowerShell, type the following,
 ```powershell
@@ -144,7 +144,7 @@ Observe the traffic within Wireshark.
 
 <p>Exit SSH by typing "Exit" in PowerShell.</p>
 
-<b>5. DHCP TRAFFIC OBSERVATION</b>
+<h3>5. DHCP TRAFFIC OBSERVATION</h3>
 <p>Back in Wireshark, filter for DHCP traffic (udp.port == 67 || udp.port == 68). In PowerShell, run ipconfig/ renew.  Observe DHCP traffic in Wireshark.</p>
 
 <details><summary>See screenshots</summary>
@@ -152,7 +152,7 @@ Observe the traffic within Wireshark.
 <img src="images/Step 5.png" width="60%">
 </details> 
 
-<b>6. DNS TRAFFIC OBSERVATION</b>
+<h3>6. DNS TRAFFIC OBSERVATION</h3>
 
 Back in Wireshark, filter for DNS traffic (DNS or udp.port == 53 || tcp.port == 53). In PowerShell use nslookup for www.google.com.
 ```powershell
@@ -164,7 +164,7 @@ nslookup google.com
 <img src="images/Step 6.png" width="60%">
 </details>
 
-<b>7. RDP TRAFFIC OBSERVATION</b>
+<h3>7. RDP TRAFFIC OBSERVATION</h3>
 <p>Back in Wireshark, filter for RDP traffic (tcp.port == 3389).  Review the data stream from our Remote Desktop Connection from the local machine to the virtual machine!</p>
 
 <details><summary>See screenshots</summary>
