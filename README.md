@@ -28,6 +28,8 @@ In this lab, we used Wireshark to observe network traffic between Azure virtual 
 
 <h2>Operating Systems Used </h2>
 
+<img src="https://skillicons.dev/icons?i=windows,ubuntu,linux" />
+
 - Windows 10 (22H2)
 - Ubuntu Server 24.04
 
