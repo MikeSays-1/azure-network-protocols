@@ -50,6 +50,7 @@ In this lab, we used Wireshark to observe network traffic between Azure virtual 
 <h2>Actions and Observations</h2>
 
 <h3>1. AZURE SETUP</h3>
+
  - Create a Resource Group, name it "rg-ad-lab".
  - Create VM, name it vm-client-1, "Windows 10 Enterprise, version 22H2 - x64 Gen 2" for image, for size, select any with 2 VCPUs and 16gb Ram, create your VM Client 1 credentials, mark checkbox for Licensing, continue to Networking> settings, create new vnet and name it "vnet-ad-lab", select Default subnet. Finally, select "Review + Create" and "Create".
  - Create Linux VM, name it vm-linux, "Ubuntu Server 24.04 LTS - x64 Gen 2" for image, for size, select any with 2 VCPUs and 16gb Ram, select Password for Authication type, create your VM Linux credentials, continue to Networking> settings, select our earler VNet named "vnet-ad-lab", select Default subnet. Finally, select "Review + Create" and "Create". 
